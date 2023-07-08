@@ -1,0 +1,37 @@
+form {
+  width: 100%;
+  margin: 10px 0;
+
+  textarea {
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border: 0.8px solid lightgray;
+    width: 100%;
+    outline: none;
+    outline: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    height: 150px;
+    &:focus {
+      outline-color: #3732b3;
+    }
+  }
+
+  button {
+    margin-top: 5px;
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    background-color: #3732b3;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    &:hover {
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.posts {
+  flex: 1;
+  position: relative;
+
+  button {
+    position: absolute;
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    background-color: #3732b3;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    &:hover {
+      opacity: 0.8;
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.2s ease;
+    }
+  }
+
+  .prevPage {
+    bottom: -50px;
+    left: 20px;
+  }
+
+  .nextPage {
+    right: 20px;
+    bottom: -50px;
+  }
+}

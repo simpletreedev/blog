@@ -1,0 +1,28 @@
+.ql-editor {
+  z-index: -1;
+  margin-bottom: 50px;
+  font-size: 18px;
+  line-height: 28px;
+  white-space: pre-wrap;
+  font-weight: 400;
+  word-spacing: 2px;
+  letter-spacing: 0.5px;
+  color: #232f3e;
+  overflow: scroll;
+  border: 1px solid #3732b3;
+
+  img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
+
+.ql-editor::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ql-editor::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}

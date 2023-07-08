@@ -1,0 +1,47 @@
+version: "3.9"
+
+services:
+  # React client services
+  client:
+    build: ./client
+    # stdin_open: true
+    ports:
+      - 3000:3000
+
+  # MongoDB services
+  mongo_db:
+    image: mongo:latest
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo_db:/data/db
+
+  # Redis services
+  cache:
+    image: redis:latest
+    restart: always
+    ports:
+      - 6379:6379
+    volumes:
+      - cache:/data
+
+  # Node api services
+  api:
+    build: ./server
+    ports:
+      - 5000:5000
+    volumes:
+      - .:/usr/src/app/server
+    environment:
+      PORT: 5000
+      MONGO_URL: process.env.MONGO_URL
+      REDIS_HOST: cache
+      REDIS_PORT: 6379
+    depends_on:
+      - mongo_db
+      - cache
+
+volumes:
+  mongo_db: {}
+  cache: {}

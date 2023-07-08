@@ -1,0 +1,13 @@
+.contactUs {
+  border-top: 5px solid #dfe7ff;
+  border-bottom: 5px solid #dfe7ff;
+  padding: 30px 0 50px 0;
+  margin-top: -25px;
+  .contactUs-container {
+    max-width: 1070px;
+    margin: 0 auto;
+    p {
+        margin: 25px 0;
+    }
+  }
+}

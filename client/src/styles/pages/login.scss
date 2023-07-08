@@ -1,0 +1,62 @@
+.login {
+  .container {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin: 50px auto;
+    padding: 50px;
+    max-width: 700px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+
+      input {
+        border-radius: 4px;
+        font-size: 16px;
+        padding: 10px 20px;
+        border: none;
+        outline: 2px solid white;
+        border-bottom: 1px solid lightgray;
+
+        &:focus {
+          outline-color: #3732b3;
+          transition: all 0.3s linear;
+        }
+      }
+
+      .btns {
+        button {
+          width: 100%;
+          padding: 10px;
+          border: none;
+          border-radius: 20px;
+          cursor: pointer;
+          border: 1px solid;
+          font-weight: bold;
+
+          &:hover {
+            transition: all 0.3s linear;
+            opacity: 0.8;
+          }
+
+          &:first-child {
+            background-color: #3732b3;
+            color: white;
+          }
+
+          &:last-child {
+            margin-top: 20px;
+            background-color: white;
+            color: #3732b3;
+            border-color: #3732b3;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.share {
+  position: absolute;
+  top: 160px;
+  left: -180px;
+  flex-direction: column;
+  display: flex;
+  // animation: share 2s;
+  gap: 14px;
+  list-style-type: none;
+
+  p {
+    font-size: 12px;
+    color: #4e6a8d;
+    font-weight: 600;
+  }
+
+  .shareItem {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+
+    .icon {
+      font-size: 20px;
+      color: white;
+    }
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+@keyframes share {
+  0% {
+    top: 100px;
+  }
+  100% {
+    top: 180px;
+  }
+}

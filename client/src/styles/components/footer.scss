@@ -1,0 +1,125 @@
+.footer {
+  border-top: 4px solid #e2e7fd;
+  background-color: #f4f7ff;
+  .footerContainer {
+    max-width: 1070px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    h2 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .footerLinks {
+      margin: 40px 0;
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .footerLinksItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        cursor: pointer;
+
+        .footer-icon {
+          width: 50px;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 4px;
+
+          .icon {
+            font-size: 25px;
+            border-radius: 4px;
+            color: white;
+          }
+          &:hover {
+            transform: scale(1.1);
+            transition: all 0.2s linear;
+          }
+        }
+
+        span {
+          color: #4e6a8d;
+          font-size: 14px;
+          word-spacing: 4px;
+        }
+      }
+    }
+
+    .footer-center {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 150px;
+
+      .footer-center-left {
+        flex: 3;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .footer-item {
+          h3 {
+            margin-bottom: 10px;
+            font-size: 16px;
+          }
+          p {
+            cursor: pointer;
+            color: #4e6a8d;
+            font-size: 14px;
+            margin-bottom: 8px;
+            &:last-child {
+              margin-bottom: unset;
+            }
+            &:hover {
+              transition: all 0.2s ease;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+      .footer-center-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .footer-button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 8px;
+          padding: 5px 30px;
+          border: none;
+          border-radius: 4px;
+          background-color: #eaedf7;
+          cursor: pointer;
+          font-size: 15px;
+          border: 1px solid #d2d4e2;
+          color: #232f3e;
+          max-width: 300px;
+
+          &:hover{
+            transition: all 0.2s linear;
+            transform: scale(1.1);
+          }
+        }
+      }
+    }
+
+    .subFooter {
+      color: #4e6a8d;
+      font-size: 12px;
+      height: 35px;
+      line-height: 35px;
+      border-top: 2px solid #e2e7fd;
+      margin-top: 20px;
+    }
+  }
+}

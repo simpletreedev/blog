@@ -1,0 +1,27 @@
+.postLeft {
+  width: 290px;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .postDate {
+    position: absolute;
+    top: -5px;
+    background-color: #4e6a8d;
+    right: -5px;
+    border-radius: 3px;
+
+    p {
+      font-size: 11px;
+      color: white;
+      padding: 5px;
+      &:last-child {
+        margin-top: -8px;
+      }
+    }
+  }
+}

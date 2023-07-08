@@ -1,0 +1,21 @@
+.title {
+  width: fit-content;
+  position: relative;
+  margin-bottom: 20px;
+  h2 {
+    font-size: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid;
+    font-weight: 800;
+  }
+
+  div {
+    height: 6px;
+    width: 40%;
+    background-color: #232f3e;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,72 @@
+.register {
+  .container {
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    margin: 50px auto;
+    padding: 50px;
+    margin-bottom: 0;
+    max-width: 800px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    form {
+      display: flex;
+      margin-bottom: 20px;
+      justify-content: space-between;
+      .register-form-group {
+        input {
+          width: 300px;
+          margin-bottom: 25px;
+          font-size: 16px;
+          padding: 10px 20px;
+          border: none;
+          outline: 2px solid white;
+          border-bottom: 1px solid lightgray;
+          border-radius: 4px;
+
+          &:focus {
+            outline-color: #3732b3;
+            transition: all 0.3s linear;
+          }
+        }
+
+        img {
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+    }
+    .btns {
+      button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        border: 1px solid;
+        font-weight: bold;
+
+        &:hover {
+          transition: all 0.3s linear;
+          opacity: 0.8;
+        }
+
+        &:first-child {
+          background-color: #3732b3;
+          color: white;
+        }
+
+        &:last-child {
+          margin-top: 20px;
+          background-color: white;
+          color: #3732b3;
+          border-color: #3732b3;
+        }
+      }
+    }
+  }
+}

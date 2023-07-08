@@ -1,0 +1,48 @@
+.trending {
+  width: 300px;
+  margin-left: 40px;
+
+  .trendingList {
+    .trendingItem {
+      margin-bottom: 20px;
+      display: flex;
+      height: 72px;
+      cursor: pointer;
+      &:hover {
+        p {
+          text-decoration: underline;
+          transition: all 0.2s ease;
+        }
+      }
+
+      .trendingImg {
+        height: 100%;
+        width: 72px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+      p {
+        padding: 0 20px 20px 20px;
+        flex: 1;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 23px;
+        color: #3d5470;
+        word-spacing: 1.5px;
+        letter-spacing: 1px;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        vertical-align: baseline;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

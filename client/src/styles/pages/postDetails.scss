@@ -1,0 +1,100 @@
+.postDetails {
+  margin-top: 40px;
+  .pdContainer {
+    max-width: 1070px;
+    margin: 0 auto;
+    position: relative;
+    .pdItem {
+      h1 {
+        font-size: 30px;
+        color: #232f3e;
+      }
+      .pdSection {
+        display: flex;
+        margin-top: 15px;
+        .pdLeft {
+          flex: 1;
+
+          .pdInfo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .postAuthor {
+              p {
+                font-size: 13px;
+                color: #4e6a8d;
+              }
+            }
+            .pdActions {
+              display: flex;
+              align-items: center;
+              .pdView {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+              }
+
+              .pdIcon {
+                margin-left: 10px;
+                cursor: pointer;
+                font-size: 20px;
+
+                &:nth-child(2) {
+                  color: green;
+                }
+
+                &:last-child {
+                  color: red;
+                }
+              }
+            }
+          }
+
+          .pdShare {
+            margin-bottom: 30px;
+          }
+
+          .postLeft {
+            margin-top: 8px;
+            height: 380px;
+            width: unset;
+          }
+
+          .pdDesc {
+            margin: 40px 0;
+            font-size: 16px;
+            line-height: 28px;
+            white-space: pre-wrap;
+            font-weight: 400;
+            word-spacing: 2px;
+            letter-spacing: 0.5px;
+            color: #232f3e;
+
+            img {
+              width: 100%;
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+
+    .newPost {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 4;
+
+      .newPostForm {
+        max-width: 900px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}

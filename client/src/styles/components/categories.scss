@@ -1,0 +1,24 @@
+.categories {
+  list-style-type: none;
+  height: 46px;
+  line-height: 46px;
+  display: flex;
+
+  li {
+    padding: 0 25px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #4e6a8d;
+    cursor: pointer;
+    border-bottom: 4px solid white;
+    &:first-child {
+      padding-left: 0;  
+    }
+
+    &:hover {
+      border-bottom-color: #3732b3;
+      transition: all 0.2s ease;
+    }
+  }
+}
