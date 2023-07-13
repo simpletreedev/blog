@@ -9,7 +9,7 @@ export const AuthContextProvider = ({ children }) => {
   const [searchValue, setSearchValue] = useState("");
   const [cat, setCat] = useState("All");
 
-  let [currentUser, setCurrentUser] = useState(
+  const [currentUser, setCurrentUser] = useState(
     JSON.parse(localStorage.getItem("userData")) || {}
   );
 

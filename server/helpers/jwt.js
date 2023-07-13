@@ -72,19 +72,17 @@ export const signRefreshToken = (userId) =>
 export const verifyRefreshToken = (refreshToken) =>
   new Promise((resolve, reject) => {
     JWT.verify(refreshToken, REFRESH_TOKEN_SECRET, (err, payload) => {
-      // if (err) return reject(createError.Unauthorized());
+      if (err) return reject(createError.Unauthorized());
       if (err) return reject("Loi err: " + err);
       const userId = payload.userId;
 
       client.get(userId, (err, result) => {
         if (err) {
           console.log(err.message);
-          reject("loi trong nay: " + err);
           return;
         }
         if (refreshToken === result) return resolve("kq: " + userId);
-        // reject(createError.Unauthorized());
-        reject("loi o cuoi: ");
+        reject(createError.Unauthorized());
       });
     });
   });
