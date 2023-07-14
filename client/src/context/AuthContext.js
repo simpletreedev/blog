@@ -20,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
   const login = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "http://103.75.186.247/api/auth/login",
         data
       );
       if (res.status === 200) {
@@ -34,7 +34,7 @@ export const AuthContextProvider = ({ children }) => {
   const register = async (data) => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "http://103.75.186.247/api/auth/register",
         data
       );
       if (res.status === 200) {
