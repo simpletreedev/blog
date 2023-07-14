@@ -19,7 +19,10 @@ export const AuthContextProvider = ({ children }) => {
 
   const login = async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", data);
+      const res = await axios.post(
+        "http://localhost:5000/api/auth/login",
+        data
+      );
       if (res.status === 200) {
         setCurrentUser(res.data.user);
       }
@@ -30,7 +33,10 @@ export const AuthContextProvider = ({ children }) => {
 
   const register = async (data) => {
     try {
-      const res = await axios.post("http://localhost:5000/auth/register", data);
+      const res = await axios.post(
+        "http://localhost:5000/api/auth/register",
+        data
+      );
       if (res.status === 200) {
         setCurrentUser(res.data.user);
       }

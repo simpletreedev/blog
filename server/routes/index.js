@@ -10,12 +10,12 @@ import { verifyAccessToken } from "../helpers/jwt.js";
 const router = Router();
 
 export const routes = () => {
-  router.use("/auth", authRoute);
+  router.use("/api/auth", authRoute);
   // router.use(verifyAccessToken);
-  router.use("/users", userRoute);
-  router.use("/upload", uploadRoute);
-  router.use("/posts", postRoute);
-  router.use("/comments", commentRoute);
+  router.use("/api/users", userRoute);
+  router.use("/api/upload", uploadRoute);
+  router.use("/api/posts", postRoute);
+  router.use("/api/comments", commentRoute);
 
   return router;
 };
